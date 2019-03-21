@@ -19,8 +19,13 @@ for i in range(1, 7):
 def nextWord():
     global curIndex, label
     length = len(allCols[curIndex])
+    if (length == 0):
+        label.config(text="None left")
+        curIndex = (curIndex + 1) % 6
+        return
     i = random.randint(0, length - 1);
     label.config(text="From column " + str(curIndex + 1) + ": " + allCols[curIndex][i])
+    allCols[curIndex].remove(allCols[curIndex][i])
     #print "Element I got was " + )
     curIndex = (curIndex + 1) % 6
     #print "next index is " + str(curIndex)

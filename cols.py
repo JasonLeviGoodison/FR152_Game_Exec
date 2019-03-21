@@ -7,7 +7,8 @@ allCols = [
         "les haricots verts",
         "les oignons",
         "les petits pois",
-        "les pommes de terre"
+        "les pommes de terre",
+        "la laiture"
     ],
     [
         "les cerises",
